@@ -1,0 +1,11 @@
+# Local secrets
+.env
+.env.*
+wp-access.txt
+*access*.txt
+*secret*.txt
+*password*.txt
+
+# Generated local audits
+wordpress-audit/
+
