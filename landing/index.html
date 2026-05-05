@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PWCHIN | One PNG. Many Creative Outputs.</title>
+  <meta name="description" content="Create an original Pwchi PNG and use it as the origin for games, animation, AI companions, merch, avatars and brand IP workflows.">
+  <style>
+    :root {
+      --ink: #fff8ff;
+      --muted: #d8c6ee;
+      --soft: #a489bf;
+      --bg: #080018;
+      --panel: #140829;
+      --panel-2: #21103d;
+      --line: rgba(255, 248, 255, 0.15);
+      --line-strong: rgba(255, 248, 255, 0.28);
+      --green: #f6f0ff;
+      --cyan: #6d72ff;
+      --coral: #ff4fd8;
+      --amber: #b75cff;
+      --shadow: 0 24px 80px rgba(5, 0, 18, 0.58);
+      --max: 1180px;
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 22% 2%, rgba(255, 79, 216, 0.24), transparent 29rem),
+        radial-gradient(circle at 92% 12%, rgba(109, 114, 255, 0.28), transparent 28rem),
+        radial-gradient(circle at 50% 42%, rgba(183, 92, 255, 0.14), transparent 34rem),
+        linear-gradient(180deg, #09001e 0%, #080018 46%, #120022 100%);
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .shell {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(8, 0, 24, 0.82);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #11140f;
+      background: linear-gradient(135deg, #ffffff, #c68bff 48%, #6d72ff);
+      box-shadow: 0 0 28px rgba(255, 79, 216, 0.32);
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      font-weight: 800;
+      line-height: 1;
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+      white-space: nowrap;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255, 248, 255, 0.42);
+    }
+
+    .button.primary {
+      color: #11140f;
+      background: linear-gradient(180deg, #7f86ff 0%, #5357f4 100%);
+      border-color: transparent;
+      box-shadow: 0 16px 34px rgba(83, 87, 244, 0.34), inset 0 -4px 0 rgba(20, 8, 41, 0.42);
+      color: #ffffff;
+    }
+
+    .button.secondary {
+      color: var(--ink);
+      background: rgba(255, 248, 255, 0.07);
+    }
+
+    .hero {
+      padding: 80px 0 58px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(340px, 0.72fr);
+      gap: 48px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 20px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--green);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 20px;
+      font-size: clamp(48px, 8vw, 104px);
+      line-height: 0.94;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 690px;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .micro-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 34px;
+      max-width: 760px;
+    }
+
+    .micro {
+      min-height: 96px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 248, 255, 0.055);
+    }
+
+    .micro strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+      font-size: 15px;
+    }
+
+    .micro span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 540px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 16%, rgba(255, 255, 255, 0.18), transparent 12rem),
+        linear-gradient(180deg, rgba(255, 248, 255, 0.08), transparent 38%),
+        linear-gradient(135deg, rgba(109, 114, 255, 0.24), rgba(255, 79, 216, 0.16) 48%, rgba(11, 0, 31, 0.76));
+      box-shadow: var(--shadow);
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 540px;
+      object-fit: cover;
+      opacity: 0.92;
+    }
+
+    .image-note {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      padding: 16px;
+      border: 1px solid rgba(255, 248, 255, 0.2);
+      border-radius: var(--radius);
+      background: rgba(8, 0, 24, 0.74);
+      backdrop-filter: blur(12px);
+    }
+
+    .image-note strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .image-note span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      padding: 78px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 34px;
+    }
+
+    .section-head h2 {
+      margin-bottom: 14px;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .statement {
+      padding: 28px;
+      border-left: 4px solid var(--coral);
+      background: rgba(255, 79, 216, 0.1);
+    }
+
+    .statement h3 {
+      font-size: 28px;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .statement p,
+    .text-list li {
+      color: var(--muted);
+    }
+
+    .text-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .stage {
+      min-height: 230px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255, 248, 255, 0.07), rgba(255, 248, 255, 0.025));
+    }
+
+    .stage-number {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 42px;
+      border-radius: 8px;
+      color: #fff8ff;
+      background: linear-gradient(135deg, var(--coral), var(--amber));
+      font-weight: 900;
+    }
+
+    .stage h3 {
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
+    .stage p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .demo {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--panel);
+    }
+
+    .demo-visual {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      background:
+        linear-gradient(135deg, rgba(109, 114, 255, 0.28), rgba(255, 79, 216, 0.16)),
+        #140829;
+      overflow: hidden;
+    }
+
+    .demo-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .placeholder {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: var(--soft);
+      text-align: center;
+      font-weight: 800;
+      background:
+        linear-gradient(90deg, rgba(255, 248, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255, 248, 255, 0.07) 1px, transparent 1px);
+      background-size: 26px 26px;
+    }
+
+    .demo-body {
+      padding: 20px;
+    }
+
+    .demo-body h3 {
+      margin-bottom: 8px;
+    }
+
+    .demo-body p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .package {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 248, 255, 0.055);
+    }
+
+    .package.featured {
+      border-color: rgba(255, 79, 216, 0.58);
+      background: linear-gradient(180deg, rgba(255, 79, 216, 0.16), rgba(109, 114, 255, 0.07));
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.22);
+    }
+
+    .tag {
+      width: fit-content;
+      margin-bottom: 20px;
+      padding: 6px 10px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .package h3 {
+      margin-bottom: 8px;
+      font-size: 25px;
+    }
+
+    .package .for {
+      min-height: 54px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .package ul {
+      display: grid;
+      gap: 10px;
+      margin: 22px 0 26px;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .package .button {
+      margin-top: auto;
+      width: 100%;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .choice {
+      min-height: 100%;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 248, 255, 0.055);
+    }
+
+    .choice.primary-choice {
+      border-color: rgba(255, 79, 216, 0.55);
+      background:
+        linear-gradient(180deg, rgba(255, 79, 216, 0.16), rgba(109, 114, 255, 0.07)),
+        var(--panel);
+    }
+
+    .choice h3 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    .choice p {
+      color: var(--muted);
+    }
+
+    .choice ul {
+      display: grid;
+      gap: 10px;
+      margin: 20px 0 26px;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .creator-strip {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: 28px;
+      align-items: center;
+      padding: 32px;
+      border: 1px solid rgba(109, 114, 255, 0.42);
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 10% 20%, rgba(255, 79, 216, 0.18), transparent 18rem),
+        rgba(255, 248, 255, 0.045);
+    }
+
+    .creator-strip h2 {
+      margin-bottom: 0;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.05;
+    }
+
+    .creator-strip p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .band {
+      background:
+        linear-gradient(90deg, rgba(109, 114, 255, 0.18), rgba(255, 79, 216, 0.14), rgba(183, 92, 255, 0.16)),
+        rgba(255, 248, 255, 0.04);
+    }
+
+    .quote {
+      max-width: 920px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .quote p {
+      margin-bottom: 18px;
+      font-size: clamp(30px, 5vw, 58px);
+      line-height: 1.06;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .quote span {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .use-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .use {
+      min-height: 142px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 248, 255, 0.045);
+    }
+
+    .use b {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .use span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .faq {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .faq-item {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 248, 255, 0.045);
+    }
+
+    .faq-item h3 {
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .final-cta {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: center;
+      padding: 34px;
+      border: 1px solid rgba(255, 79, 216, 0.42);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(255, 79, 216, 0.18), rgba(109, 114, 255, 0.12)),
+        var(--panel);
+    }
+
+    .final-cta h2 {
+      margin-bottom: 8px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.05;
+    }
+
+    .final-cta p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 34px 0 42px;
+      border-top: 1px solid var(--line);
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .split,
+      .final-cta {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 54px;
+      }
+
+      .hero-visual,
+      .hero-visual img {
+        min-height: 430px;
+      }
+
+      .pipeline,
+      .packages,
+      .choice-grid,
+      .use-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .demo-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .shell {
+        width: min(100% - 28px, var(--max));
+      }
+
+      .nav {
+        min-height: 66px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 44px 0 44px;
+      }
+
+      .hero-copy,
+      .section-head p {
+        font-size: 17px;
+      }
+
+      .hero-actions,
+      .final-cta .button {
+        width: 100%;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .micro-row,
+      .pipeline,
+      .packages,
+      .choice-grid,
+      .creator-strip,
+      .use-grid,
+      .faq {
+        grid-template-columns: 1fr;
+      }
+
+      .micro {
+        min-height: auto;
+      }
+
+      .hero-visual,
+      .hero-visual img {
+        min-height: 360px;
+      }
+
+      section {
+        padding: 56px 0;
+      }
+
+      .stage {
+        min-height: 190px;
+      }
+
+      .stage-number {
+        margin-bottom: 24px;
+      }
+
+      .final-cta {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="#top" aria-label="PWCHIN home">
+        <span class="brand-mark">P</span>
+        <span>PWCHIN</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#pipeline">Pipeline</a>
+        <a href="#demos">Demos</a>
+        <a href="#demo-pack">Demo Pack</a>
+        <a href="#packages">Services</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="button primary" href="#demo-pack">Get Free Demo Pack</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow">Born from limitation. Shaped by imagination.</p>
+          <h1>One PNG. Many Creative Outputs.</h1>
+          <p class="hero-copy">Start with a free demo pack to see how one Pwchi PNG can become games, animation, AI companions, merch, avatars and brand IP workflows. Then build it yourself or hire a creator to do it with you.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#demo-pack">Get the Free Demo Pack</a>
+            <a class="button secondary" href="#contact">Hire for My Pipeline</a>
+          </div>
+          <div class="micro-row" aria-label="PWCHIN benefits">
+            <div class="micro">
+              <strong>Original source</strong>
+              <span>Start from a distinct character image, not a copied style.</span>
+            </div>
+            <div class="micro">
+              <strong>Visual continuity</strong>
+              <span>Keep one identity across multiple formats and tools.</span>
+            </div>
+            <div class="micro">
+              <strong>Two ways to start</strong>
+              <span>Learn the method yourself or get help from PWCHIN creators.</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <!-- Replace this image with your strongest Pwchi hero asset. Suggested ratio: 4:5 or 1:1. -->
+          <img src="../assets/create-now.jpg" alt="Pwchi World characters" onerror="this.style.display='none'">
+          <figcaption class="image-note">
+            <strong>Image placeholder</strong>
+            <span>Hero image from the PWCHIN visual set. Replace assets/create-now.jpg in the repo if needed.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <div class="shell split">
+        <div class="statement">
+          <h2>AI characters often lack origin.</h2>
+          <p>A generated image can look interesting, but creators need more than a one-off visual. They need a character with a clear starting point, reusable direction and enough continuity to survive the next tool in the pipeline.</p>
+        </div>
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">The shift</p>
+            <h2>Do not start your character pipeline from a copied style.</h2>
+            <p>Start from an original source image. PWCHIN helps creators build characters that can move across creative workflows while keeping their identity intact.</p>
+          </div>
+          <ul class="text-list">
+            <li>For indie game devs who need fast character concepts without losing originality.</li>
+            <li>For AI creators who want a consistent visual seed across multiple outputs.</li>
+            <li>For small brands and channels that need a mascot or recurring avatar.</li>
+            <li>For worldbuilders who want characters with lore, clans and identity.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="pipeline">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">The PWCHIN method</p>
+          <h2>From origin asset to production direction.</h2>
+          <p>The Pwchi Pipeline Pack turns one character image into a practical creative map for the next outputs.</p>
+        </div>
+        <div class="pipeline">
+          <article class="stage">
+            <span class="stage-number">1</span>
+            <h3>Create the Pwchi</h3>
+            <p>Start with one original PNG character designed as the source of the project.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-number">2</span>
+            <h3>Define identity</h3>
+            <p>Add clan, personality, visual notes and a compact lore direction.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-number">3</span>
+            <h3>Map outputs</h3>
+            <p>Plan how the same character can become 3D, animated, playable or social-ready.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-number">4</span>
+            <h3>Build assets</h3>
+            <p>Use the origin image to guide pipeline prompts, mockups and production experiments.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="demos">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">Pipeline examples</p>
+          <h2>One character can move in many directions.</h2>
+          <p>Replace these placeholders with existing PWCHIN images, before/after exports or demo mockups.</p>
+        </div>
+        <div class="demo-grid">
+          <article class="demo">
+            <div class="demo-visual">
+              <!-- Replace with a PNG to 3D before/after image. -->
+              <img src="assets/demo-png-to-3d.png" alt="Pwchi PNG transformed into a 3D concept" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+              <span class="placeholder">PNG to 3D concept image</span>
+            </div>
+            <div class="demo-body">
+              <h3>PNG to 3D Concept</h3>
+              <p>Use the original Pwchi as visual direction for sculpting, 3D generation, Blender exploration or game character planning.</p>
+            </div>
+          </article>
+          <article class="demo">
+            <div class="demo-visual">
+              <!-- Replace with a talking avatar or animation still. -->
+              <img src="assets/demo-talking-avatar.png" alt="Pwchi transformed into a talking avatar" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+              <span class="placeholder">Talking avatar image</span>
+            </div>
+            <div class="demo-body">
+              <h3>PNG to Talking Avatar</h3>
+              <p>Turn the character into a recurring video presence, AI companion, social host or animated persona direction.</p>
+            </div>
+          </article>
+          <article class="demo">
+            <div class="demo-visual">
+              <!-- Replace with sticker, merch or NPC concept image. -->
+              <img src="assets/demo-sticker-npc.png" alt="Pwchi transformed into sticker, merch and game NPC concepts" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+              <span class="placeholder">Sticker, merch or NPC image</span>
+            </div>
+            <div class="demo-body">
+              <h3>PNG to Sticker, Merch or NPC</h3>
+              <p>Extend the same source into collectibles, sticker packs, game NPC concepts, community avatars or mascot systems.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="shell quote">
+        <p>PWCHIN gives every character an origin before it enters the AI pipeline.</p>
+        <span>Imagination is part of the system.</span>
+      </div>
+    </section>
+
+    <section id="demo-pack">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">Start free</p>
+          <h2>Try the method before you buy the service.</h2>
+          <p>The free Demo Pack shows how a single Pwchi PNG can move through multiple creative directions. It is for creators who want to learn the workflow and for buyers who want proof before requesting a custom pipeline.</p>
+        </div>
+        <div class="choice-grid">
+          <article class="choice primary-choice">
+            <span class="tag">Free</span>
+            <h3>Download the Demo Pack</h3>
+            <p>Explore a sample Pwchi origin asset and follow suggested pipeline paths for 3D, talking avatars, stickers, merch, NPC concepts and AI companion direction.</p>
+            <ul>
+              <li>Sample Pwchi PNG</li>
+              <li>Pipeline map for multiple outputs</li>
+              <li>Prompt notes for external tools</li>
+              <li>Before / after demo placeholders</li>
+              <li>Mini-guide for creators and freelancers</li>
+            </ul>
+            <a class="button primary" href="mailto:hello@pwchin.com?subject=PWCHIN%20Free%20Demo%20Pack">Get the Free Demo Pack</a>
+          </article>
+
+          <article class="choice">
+            <span class="tag">Done for you</span>
+            <h3>Hire a Pipeline Creator</h3>
+            <p>If the process feels too technical, PWCHIN can become the bridge between the idea and the output. You bring the character goal; a creator builds the direction with you.</p>
+            <ul>
+              <li>Custom Pwchi origin asset</li>
+              <li>Pipeline planning for your use case</li>
+              <li>Output direction for games, avatars or merch</li>
+              <li>Optional creator collaboration</li>
+              <li>Clear next steps for production</li>
+            </ul>
+            <a class="button secondary" href="#contact">Request a Custom Pipeline</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shell creator-strip">
+        <h2>A new service layer for freelancers.</h2>
+        <p>PWCHIN can also become a playbook for independent creators. Freelancers can learn the pipeline, use the Demo Pack as a starting framework and offer character transformation services to clients who need original avatars, mascots, NPCs, stickers, merch concepts or AI companion identities.</p>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">Service options</p>
+          <h2>When you want help, choose a pipeline package.</h2>
+          <p>Start free with the Demo Pack, then move into a custom offer when you want your own Pwchi, your own outputs or a creator helping with the process.</p>
+        </div>
+        <div class="packages">
+          <article class="package">
+            <span class="tag">Entry</span>
+            <h3>Pwchi Origin</h3>
+            <p class="for">For creators who need an original character starting point.</p>
+            <ul>
+              <li>One original Pwchi PNG</li>
+              <li>Basic character direction</li>
+              <li>Clan or worldbuilding note</li>
+              <li>Usage ideas for future pipelines</li>
+              <li>Export-ready image asset</li>
+            </ul>
+            <a class="button secondary" href="#contact">Create My Pwchi</a>
+          </article>
+
+          <article class="package featured">
+            <span class="tag">Recommended</span>
+            <h3>Pwchi Pipeline Pack</h3>
+            <p class="for">For creators who want one Pwchi to become multiple production directions.</p>
+            <ul>
+              <li>Original Pwchi PNG</li>
+              <li>3D concept direction</li>
+              <li>Animation or talking avatar direction</li>
+              <li>Game NPC or character sheet direction</li>
+              <li>Sticker or merch concept direction</li>
+              <li>Prompt notes for external AI tools</li>
+              <li>Short lore or identity block</li>
+            </ul>
+            <a class="button primary" href="#contact">Build My Character Pipeline</a>
+          </article>
+
+          <article class="package">
+            <span class="tag">Custom</span>
+            <h3>Pwchi Brand Mascot</h3>
+            <p class="for">For brands, channels and communities that need a recurring character.</p>
+            <ul>
+              <li>Original mascot-style Pwchi</li>
+              <li>Visual identity direction</li>
+              <li>Short personality profile</li>
+              <li>Social content usage ideas</li>
+              <li>Sticker, merch and avatar concepts</li>
+              <li>Optional launch post drafts</li>
+            </ul>
+            <a class="button secondary" href="#contact">Request a Brand Pwchi</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">Use cases</p>
+          <h2>Built for the AI character economy.</h2>
+          <p>A Pwchi is not only a finished image. It is the source image for what comes next.</p>
+        </div>
+        <div class="use-grid">
+          <div class="use">
+            <b>Indie games</b>
+            <span>NPC concepts, character sheets, prototype casts and visual direction.</span>
+          </div>
+          <div class="use">
+            <b>AI companions</b>
+            <span>Avatars, talking personas, companion identity and social presence.</span>
+          </div>
+          <div class="use">
+            <b>Merch</b>
+            <span>Sticker packs, collectibles, apparel concepts and product mockups.</span>
+          </div>
+          <div class="use">
+            <b>Brand IP</b>
+            <span>Original mascots, recurring hosts and audience-facing characters.</span>
+          </div>
+          <div class="use">
+            <b>Worldbuilding</b>
+            <span>Clans, lore, origin systems and visual rules for fictional worlds.</span>
+          </div>
+          <div class="use">
+            <b>Video</b>
+            <span>Short-form content, reveal videos, animation tests and creator updates.</span>
+          </div>
+          <div class="use">
+            <b>Community</b>
+            <span>Avatars, Discord identity, fan characters and collaborative lore.</span>
+          </div>
+          <div class="use">
+            <b>Pipeline tests</b>
+            <span>External tools, prompt experiments and multi-format asset development.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Practical answers before you start.</h2>
+        </div>
+        <div class="faq">
+          <article class="faq-item">
+            <h3>Is PWCHIN only an AI image generator?</h3>
+            <p>No. PWCHIN focuses on character origin and reusable creative direction. The PNG is the starting point for a wider pipeline.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can I use a Pwchi for commercial projects?</h3>
+            <p>PWCHIN is designed to help creators start from an original source image. Specific rights, usage and delivery terms should be confirmed for each package.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Do I receive production-ready 3D files?</h3>
+            <p>The Pipeline Pack provides direction and concepts for 3D, animation, avatars and other outputs. Production-ready files can be scoped as a custom service.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Who is this best for?</h3>
+            <p>Indie game developers, AI character creators, solo creators, worldbuilders, small brands and channels that need recurring original characters.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="shell">
+        <div class="final-cta">
+          <div>
+            <h2>Ready to give your character an origin?</h2>
+            <p>Start with one original Pwchi PNG and build the pipeline around it.</p>
+          </div>
+          <a class="button primary" href="mailto:hello@pwchin.com?subject=PWCHIN%20Pipeline%20Pack%20Request">Request a Pipeline Pack</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-row">
+      <span>PWCHIN / Pwchi World</span>
+      <span>One PNG. Many creative outputs.</span>
+    </div>
+  </footer>
+</body>
+</html>
