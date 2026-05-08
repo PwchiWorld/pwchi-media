@@ -4,39 +4,47 @@
 
 **Clan**: SkyRocks
 
-**Role**: Prominent representative / adventurer / tech-gadgeteer of the SkyRocks Clan
+**Role**: Prominent representative, adventurer, and tech-gadgeteer
 
-**Visual Reference**:
-- See images in this `members/` folder for canonical appearance.
+**Scale**
+- 7 cm tall in PwchinWorld
+- 45 cm tall in human dimension reference
 
-**Appearance**
-- Cute chibi-style design
-- Long purple hair in high ponytail
-- Large expressive purple eyes
-- Signature purple outfit with steampunk/gadget elements (goggles, tool belt, corset-style top, boots)
-- Carries tools and gadgets (e.g. wrench, mechanical devices)
+**Visual DNA & Physicality** (for maximum consistency)
+- Cute chibi-style design with exaggerated features
+- Long vibrant purple hair in high ponytail
+- Large expressive purple eyes with detailed iris
+- Round face with soft features
+- Proportional chibi body (head relatively large compared to body)
+
+**Signature Apparel & Style**
+- Purple-dominated steampunk/tech-gadgeteer outfit
+- Goggles on head or forehead
+- Tool belt with pouches and gadgets
+- Corset-style top with mechanical accents
+- Boots with laces and buckles
+- Gloves and accessories (wrenches, mechanical tools)
 
 **Personality**
 - Adventurous, curious, energetic
-- Inventor / tinkerer mindset
+- Inventor and tinkerer at heart
 - Friendly and optimistic
 
-**Abilities / Specialties**
-- Advanced gadgeteering and technology
-- Knowledge of SkyRocks' floating city systems and anti-gravity tech
-- Exploration and interdimensional navigation
+**Abilities**
+- Expert in gadgeteering and SkyRocks technology
+- Knowledge of floating city systems and anti-gravity tech
+- Skilled explorer
 
-**Lore Connection**
-- Key figure in the SkyRocks Clan
-- Embodies the clan's values of innovation, elevation, and technological progress
-
-**Story Hooks**
-- (To be expanded based on adventures)
+**Optimized Prompt for AI Generators** (copy-paste ready)
+"Cute chibi-style character Mara from SkyRocks Clan, long vibrant purple hair in high ponytail, large expressive purple eyes, round soft face, 7cm scale in PwchinWorld (45cm human reference), wearing purple steampunk tech outfit with goggles, tool belt, corset top, boots, and gadgets, holding wrench or mechanical tool, vibrant purple and gold color scheme, highly detailed, consistent character design, adventurous expression, premium quality."
 
 **Visual Consistency Rule**
-All future images of Mara must match the canonical reference provided in this project (purple theme, chibi style, specific outfit elements).
+Always use the canonical uploaded reference image as base. Maintain chibi proportions, purple color palette, and gadgeteer aesthetic in all generations.
 
-**Images**:
-- Canonical reference (uploaded by user)
-- Variations (generated as needed while maintaining 100% consistency)
+**Images Location**
+- Canonical reference and variations are in this `members/` folder.
 
+**Next Steps**
+- Add more apparel variations
+- Develop story integration
+- Generate additional poses and outfits while keeping 100% consistency.
