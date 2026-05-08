@@ -36,7 +36,9 @@
 - Skilled explorer
 
 **Optimized Prompt for AI Generators** (copy-paste ready)
-"Cute chibi-style character Mara from SkyRocks Clan, long vibrant purple hair in high ponytail, large expressive purple eyes, round soft face, 7cm scale in PwchinWorld (45cm human reference), wearing purple steampunk tech outfit with goggles, tool belt, corset top, boots, and gadgets, holding wrench or mechanical tool, vibrant purple and gold color scheme, highly detailed, consistent character design, adventurous expression, premium quality."
+```html
+Cute chibi-style character Mara from SkyRocks Clan, long vibrant purple hair in high ponytail, large expressive purple eyes, round soft face, 7cm scale in PwchinWorld (45cm human reference), wearing purple steampunk tech outfit with goggles, tool belt, corset top, boots, and gadgets, holding wrench or mechanical tool, vibrant purple and gold color scheme, highly detailed, consistent character design, adventurous expression, premium quality.
+```
 
 **Visual Consistency Rule**
 Always use the canonical uploaded reference image as base. Maintain chibi proportions, purple color palette, and gadgeteer aesthetic in all generations.
