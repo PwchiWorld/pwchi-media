@@ -1,44 +1,49 @@
 # SkyRocks Clan
 
-**Clan Name**: SkyRocks (also referred to as Sky-Rocks)
+**Clan Name**: SkyRocks (Sky-Rocks)
 
 **Representative Character**: Mara
 
+**Type**: Air-type Pwchi-class
+
+**Headquarters**: SkyRocks HQ — aircraft city-platform built on floating rocks connected by energy conduits
+
 **Overview**
-The SkyRocks Clan inhabits and maintains a magnificent high-altitude hovering city — a technological marvel suspended in the skies of PwchinWorld. This clan embodies innovation, elevation, freedom, and advanced technology. Their floating realm serves as a beacon of progress and a hub for interdimensional exploration.
+The SkyRocks Clan resides in a futuristic utopian city that floats at a very high altitude. The city is a technological marvel constructed upon a series of floating rocks connected by energy conduits, set against a vibrant purple and pink sky. It is divided into two main levels: a lower level with sleek modern skyscrapers and an elevated domed platform containing white geometric buildings and futuristic installations illuminated with soft purple glow. Futuristic vehicles zip in and out, emphasizing the clan's advanced aeronautical engineering.
 
 **Key Characteristics**
-- **Technological Mastery**: Experts in advanced engineering, anti-gravity systems, energy manipulation, and futuristic infrastructure.
-- **Aerial Philosophy**: Values height, perspective, freedom, and looking toward the horizon (both literally and metaphorically).
-- **Visual Aesthetic**: Sleek futuristic design, glowing elements, metallic and crystalline structures, dynamic floating platforms, wind-swept architecture.
-- **Class**: 4
+- **Technological Mastery**: Experts in aeronautical engineering, anti-gravity systems, energy manipulation, and hi-tech development.
+- **Aerial Philosophy**: Innovation, collaboration, curiosity about the upper atmosphere and energies of Pwchi World.
+- **Visual Aesthetic**: Futuristic, sleek, glowing purple/teal elements, floating platforms, crystalline and metallic structures.
+- **Technology Level**: Class 4
+- **Main Occupations**: Trading, hi-tech development, aeronautical engineering
 
-**Notable Locations**
-- The SkyRocks Hovering City — a vast, multi-layered floating metropolis filled with luminous towers, energy bridges, research spires, and aerial gardens.
+**History**
+The SkyRocks Clan started as a small group of Pwchies fascinated by the mysteries of the upper atmosphere. Through generations of innovation and collaboration, they built their magnificent floating city. They became renowned for technological prowess and trading acumen, establishing trade routes with other clans. They have overcome resource scarcity and conflicts through resilience and adaptability.
 
-**Connection to Mara**
-Mara is the prominent representative of the SkyRocks Clan. She embodies the clan's innovative spirit, technological affinity, and elevated perspective.
+**Culture**
+- Governed by the SR Council of nine Pwchies representing various factions.
+- Strong emphasis on education, research, and artistic expression using advanced technologies.
+- Values innovation, collaboration, and collective decision-making.
 
-**Distinction from Mira**
-Mara and Mira are distinct characters. Mira remains a central figure in PwchinWorld (clan affiliation to be confirmed or developed).
+**Leadership**
+- SR Council (9 council Pwchies + faction leaders)
 
-**Lore Hooks & Expansion Areas**
-- Relationship with other clans (possible alliances with ground-based or nature-oriented clans, tension with more traditional ones).
-- Role in PwchinWorld's larger story (guardians of knowledge, explorers of new dimensions, or defenders against threats from below).
-- Technological contributions to the entire Pwchi society.
+**Bordering Clans**
+- NW (land): Ignia Clan
+- NW (land): Tall Tree Clan
+- NE (air): Moon Above Clouds Clan
 
-**Symbols & Motifs** (to be expanded)
-- Floating rocks/islands
-- Glowing energy lines
-- High-tech crystalline structures
-- Sky and horizon imagery
+**Example Speech Snippets**
+- Addressing the SR Council: “Let us explore the uncharted territories of innovation, where our collective ingenuity can shape the future of the SkyRocks Clan.”
+- Negotiating with a neighboring clan: “I propose a mutually beneficial alliance, where our strengths complement each other, creating a synergy that elevates us both.”
+- Mentoring a young Pwchi: “Never be afraid to question the status quo, for it is through curiosity that we unlock the greatest discoveries.”
 
 **Notes**
-- This is the first fully documented clan in our worldbuilding project.
-- Official reference: https://pwchin.com/pwchi-clan/skyrocks-clan/
-- Further details (philosophy, specific Pwchies, history, conflicts, Mara's full profile) will be added as we extract more from canon sources.
+- Population reference: 1 (possibly referring to a key figure or placeholder)
+- This clan is now fully integrated with the detailed canon provided.
 
 **Next Steps**:
-- Enrich with more canon details from the official page.
-- Generate visual moodboard for SkyRocks aesthetic featuring Mara.
-- Develop additional SkyRocks characters.
+- Add visual moodboard and more images to subfolders
+- Expand Mara character integration
+- Develop relationships with bordering clans in more detail
