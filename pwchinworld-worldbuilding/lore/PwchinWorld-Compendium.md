@@ -38,6 +38,24 @@ The position and color still carry meaning within bloodlines. Ground clans have 
 
 The crescent is now a mark of connection and shared history.
 
+## Chapter Three – The Clans
+
+### A Note Before We Begin
+I have not visited every clan. I have not been welcomed everywhere I’ve tried to go. Some of what follows is firsthand. Some was told to me by people I trust. Some was pieced together from maps, traded goods, and reactions to clan names.
+
+This is an active compendium. It will grow. Nothing here is invented for comfort. PwchinWorld is not comfortable. It is extraordinary.
+
+### High Fields Clan – The ones who chose the future.
+High Fields Pwchies stand between seven centimeters and sixty centimeters tall. They carry themselves with spatial confidence that makes scale feel irrelevant. Their proportions are slightly off from human standard (head fraction larger, eyes with unusual depth, movements too fluid).
+
+High Fields was a native ground clan that chose welcome over fear when Aura survivors arrived. They traded, learned, intermarried, and absorbed technology, spirituality, and culture from the Auran societies. They evolved faster than any other clan.
+
+Their settlements are across wide elevated grassland plains with architecture blending native stone and Auran crystal-working. Their markets are the most diverse. Their language has absorbed many loanwords.
+
+**Mira is from the High Fields Clan.**
+
+**Note**: More clans will be documented as the compendium grows.
+
 ---
 
 **Note**: This compendium is ongoing and incomplete. More chapters and updates will be added as the explorer continues their work.
