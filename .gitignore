@@ -8,4 +8,7 @@ wp-access.txt
 
 # Generated local audits
 wordpress-audit/
+local-audit/
 
+# Local private asset dumps
+drive-assets/
