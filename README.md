@@ -13,11 +13,13 @@ A Pwchi starts as an original source image, then becomes the origin for multiple
 ## What This Repo Contains
 
 - `landing/` - landing page files for the Free Demo Pack and custom pipeline offer
+- `landing/img/` - local visual assets used by the landing page
 - `assets/` - public visual assets used by the landing page and posts
-- `demo-pack/` - free demo pack docs, pipeline guide and prompt notes
+- `demo-pack/` - free demo pack ZIP, docs, pipeline guide and prompt notes
 - `content-bank/` - short-form scripts, Reddit drafts, Pinterest ideas and Substack outlines
 - `creator-services/` - templates for freelancers and creators who want to offer Pwchi pipeline services
 - `strategy/` - positioning and operating notes
+- `wordpress-drafts/` - HTML source for WordPress pages and Custom HTML / WPCoder usage
 
 ## Main Funnel
 
@@ -28,10 +30,45 @@ A Pwchi starts as an original source image, then becomes the origin for multiple
 
 ## Main Calls To Action
 
-- Get the Free Demo Pack
-- Request a Custom Pwchi
-- Hire a Pipeline Creator
+- Download the Free Demo Pack
+- Create a Pwchi
+- Request a Guided Tour
 - Learn the Pwchi Pipeline
+- Build a custom character pipeline
+
+## Current Landing Page
+
+The current landing page is:
+
+- `landing/index.html`
+
+It is designed as the public Free Demo Pack page and uses local assets from:
+
+- `landing/img/`
+
+The current downloadable ZIP is:
+
+- `demo-pack/pwchi-demo-pipelines.zip`
+
+The page is also mirrored as a WordPress-ready draft:
+
+- `wordpress-drafts/free-pwchi-demo-pack-page.html`
+
+Important:
+
+The WordPress version uses absolute `https://pwchin.com/wp-content/...` media URLs, while the static landing page uses local `landing/img/` assets.
+
+## WordPress Publishing Notes
+
+The live WordPress site is the public source for visitors.
+
+Recommended workflow:
+
+1. Update the local landing page and assets.
+2. Update the WordPress page manually or through REST API as a draft first.
+3. Confirm all download links and images work.
+4. Push the repo to GitHub.
+5. Use GitHub as the public media/development archive.
 
 ## Public Links
 
@@ -43,4 +80,3 @@ A Pwchi starts as an original source image, then becomes the origin for multiple
 - Pinterest: https://ro.pinterest.com/pwchies/
 - Instagram: https://www.instagram.com/pwchinworld/
 - DeviantArt: https://www.deviantart.com/pwchi
-

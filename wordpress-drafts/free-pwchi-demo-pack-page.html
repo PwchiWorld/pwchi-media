@@ -1,400 +1,14 @@
 <style>
-  .pwchi-demo-page {
-    --pw-bg: #080018;
-    --pw-panel: #150829;
-    --pw-panel-2: #21103d;
-    --pw-ink: #fff8ff;
-    --pw-muted: #dbc7f1;
-    --pw-soft: #a98bc7;
-    --pw-line: rgba(255, 248, 255, 0.16);
-    --pw-line-strong: rgba(255, 248, 255, 0.28);
-    --pw-pink: #ff4fd8;
-    --pw-violet: #b75cff;
-    --pw-blue: #6872ff;
-    --pw-max: 1180px;
-    color: var(--pw-ink);
-    background:
-      radial-gradient(circle at 20% 0%, rgba(255, 79, 216, 0.22), transparent 30rem),
-      radial-gradient(circle at 90% 10%, rgba(104, 114, 255, 0.28), transparent 30rem),
-      linear-gradient(180deg, #09001e 0%, var(--pw-bg) 46%, #120022 100%);
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.55;
-    overflow: hidden;
-  }
+.pwchi-demo-page { --pw-bg: #080018; --pw-panel: #150829; --pw-panel-2: #21103d; --pw-ink: #fff8ff; --pw-muted: #dbc7f1; --pw-soft: #a98bc7; --pw-line: rgba(255, 248, 255, 0.16); --pw-line-strong: rgba(255, 248, 255, 0.28); --pw-pink: #ff4fd8; --pw-violet: #b75cff; --pw-blue: #6872ff; --pw-max: 1180px; color: var(--pw-ink); background: radial-gradient(circle at 20% 0%, rgba(255, 79, 216, 0.22), transparent 30rem), radial-gradient(circle at 90% 10%, rgba(104, 114, 255, 0.28), transparent 30rem), linear-gradient(180deg, #09001e 0%, var(--pw-bg) 46%, #120022 100%); font-family: Arial, Helvetica, sans-serif; line-height: 1.55; overflow: hidden; } .pwchi-demo-page * { box-sizing: border-box; } .pwchi-wrap { width: min(var(--pw-max), calc(100% - 34px)); margin: 0 auto; } .pwchi-section { padding: 76px 0; border-top: 1px solid var(--pw-line); } .pwchi-hero { padding: 86px 0 70px; } .pwchi-grid { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(340px, 0.78fr); gap: 44px; align-items: center; } .pwchi-eyebrow { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 18px; color: #f6f0ff; font-size: 13px; font-weight: 800; text-transform: uppercase; } .pwchi-eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--pw-pink); } .pwchi-demo-page h1, .pwchi-demo-page h2, .pwchi-demo-page h3, .pwchi-demo-page p { margin-top: 0; } .pwchi-demo-page h1 { max-width: 800px; margin-bottom: 22px; font-size: clamp(46px, 7vw, 92px); line-height: 0.96; letter-spacing: 0; } .pwchi-lead { max-width: 720px; color: var(--pw-muted); font-size: 20px; } .pwchi-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; } .pwchi-btn { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 0 20px; border: 1px solid var(--pw-line-strong); border-radius: 8px; color: var(--pw-ink); font-weight: 800; text-decoration: none; } .pwchi-btn-primary { color: #fff; border-color: transparent; background: linear-gradient(180deg, #8088ff 0%, #5158f4 100%); box-shadow: 0 18px 36px rgba(81, 88, 244, 0.34), inset 0 -4px 0 rgba(20, 8, 41, 0.42); } .pwchi-btn-secondary { background: rgba(255, 248, 255, 0.075); } .pwchi-hero-card { position: relative; min-height: 520px; border: 1px solid var(--pw-line-strong); border-radius: 8px; overflow: hidden; background: var(--pw-panel); box-shadow: 0 26px 90px rgba(0, 0, 0, 0.5); } .pwchi-hero-card img { width: 100%; height: 100%; min-height: 520px; object-fit: cover; } .pwchi-float-note { position: absolute; left: 18px; right: 18px; bottom: 18px; padding: 16px; border: 1px solid rgba(255, 248, 255, 0.2); border-radius: 8px; background: rgba(8, 0, 24, 0.76); backdrop-filter: blur(12px); } .pwchi-float-note strong { display: block; margin-bottom: 5px; } .pwchi-float-note span, .pwchi-card p, .pwchi-step p, .pwchi-media-card p, .pwchi-faq p { color: var(--pw-muted); } .pwchi-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 34px; } .pwchi-metric, .pwchi-card, .pwchi-step, .pwchi-media-card, .pwchi-faq { border: 1px solid var(--pw-line); border-radius: 8px; background: rgba(255, 248, 255, 0.055); } .pwchi-metric { min-height: 104px; padding: 18px; } .pwchi-metric strong { display: block; margin-bottom: 5px; font-size: 24px; } .pwchi-metric span { color: var(--pw-muted); font-size: 14px; } .pwchi-head { max-width: 780px; margin-bottom: 34px; } .pwchi-head h2 { margin-bottom: 14px; font-size: clamp(34px, 5vw, 58px); line-height: 1.02; } .pwchi-head p { color: var(--pw-muted); font-size: 18px; } .pwchi-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; } .pwchi-three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; } .pwchi-four { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; } .pwchi-card, .pwchi-step, .pwchi-faq { padding: 24px; } .pwchi-card-featured { border-color: rgba(255, 79, 216, 0.55); background: linear-gradient(180deg, rgba(255, 79, 216, 0.16), rgba(104, 114, 255, 0.08)), var(--pw-panel); } .pwchi-tag { display: inline-flex; margin-bottom: 18px; padding: 6px 10px; border: 1px solid var(--pw-line-strong); border-radius: 999px; color: #f6f0ff; font-size: 12px; font-weight: 900; text-transform: uppercase; } .pwchi-card h3, .pwchi-step h3, .pwchi-media-card h3, .pwchi-faq h3 { margin-bottom: 10px; font-size: 23px; line-height: 1.14; } .pwchi-list { display: grid; gap: 10px; margin: 18px 0 0; padding-left: 18px; color: var(--pw-muted); } .pwchi-pipeline { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; } .pwchi-step-number { display: inline-grid; width: 36px; height: 36px; place-items: center; margin-bottom: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--pw-pink), var(--pw-violet)); font-weight: 900; } .pwchi-media-card { overflow: hidden; } .pwchi-media-card img, .pwchi-media-card video { width: 100%; aspect-ratio: 16 / 16; object-fit: cover; background: #120022; } .pwchi-media-body { padding: 18px; } .pwchi-band { background: linear-gradient(90deg, rgba(104, 114, 255, 0.16), rgba(255, 79, 216, 0.14), rgba(183, 92, 255, 0.14)), rgba(255, 248, 255, 0.045); } .pwchi-clan-card { position: relative; min-height: 210px; border: 1px solid var(--pw-line); border-radius: 8px; overflow: hidden; background: var(--pw-panel); } .pwchi-clan-card img { width: 100%; height: 100%; min-height: 210px; object-fit: cover; opacity: 0.84; } .pwchi-clan-card span { position: absolute; left: 12px; right: 12px; bottom: 12px; padding: 10px 12px; border: 1px solid rgba(255, 248, 255, 0.18); border-radius: 8px; background: rgba(8, 0, 24, 0.72); font-weight: 800; } .pwchi-cta { padding: 34px; border: 1px solid rgba(255, 79, 216, 0.46); border-radius: 8px; background: radial-gradient(circle at 20% 10%, rgba(255, 79, 216, 0.22), transparent 18rem), linear-gradient(135deg, rgba(255, 79, 216, 0.14), rgba(104, 114, 255, 0.1)), var(--pw-panel); } .pwchi-cta h2 { margin-bottom: 10px; font-size: clamp(32px, 5vw, 58px); line-height: 1.04; } .pwchi-cta p { max-width: 760px; color: var(--pw-muted); font-size: 18px; } @media (max-width: 980px) { .pwchi-grid, .pwchi-two { grid-template-columns: 1fr; } .pwchi-three, .pwchi-four, .pwchi-pipeline, .pwchi-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); } } @media (max-width: 680px) { .pwchi-section, .pwchi-hero { padding: 54px 0; } .pwchi-three, .pwchi-four, .pwchi-pipeline, .pwchi-metrics { grid-template-columns: 1fr; } .pwchi-actions .pwchi-btn, .pwchi-btn { width: 100%; } .pwchi-hero-card, .pwchi-hero-card img { min-height: 360px; } }.pwchi-four a span{color:#dbc7f1;text-decoration:none;}.pwchi-four a:hover span{color:#fff;text-decoration:none;}
 
-  .pwchi-demo-page * {
-    box-sizing: border-box;
-  }
 
-  .pwchi-wrap {
-    width: min(var(--pw-max), calc(100% - 34px));
-    margin: 0 auto;
-  }
 
-  .pwchi-section {
-    padding: 76px 0;
-    border-top: 1px solid var(--pw-line);
-  }
 
-  .pwchi-hero {
-    padding: 86px 0 70px;
-  }
 
-  .pwchi-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.02fr) minmax(340px, 0.78fr);
-    gap: 44px;
-    align-items: center;
-  }
 
-  .pwchi-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0 0 18px;
-    color: #f6f0ff;
-    font-size: 13px;
-    font-weight: 800;
-    text-transform: uppercase;
-  }
 
-  .pwchi-eyebrow::before {
-    content: "";
-    width: 28px;
-    height: 2px;
-    background: var(--pw-pink);
-  }
 
-  .pwchi-demo-page h1,
-  .pwchi-demo-page h2,
-  .pwchi-demo-page h3,
-  .pwchi-demo-page p {
-    margin-top: 0;
-  }
 
-  .pwchi-demo-page h1 {
-    max-width: 800px;
-    margin-bottom: 22px;
-    font-size: clamp(46px, 7vw, 92px);
-    line-height: 0.96;
-    letter-spacing: 0;
-  }
-
-  .pwchi-lead {
-    max-width: 720px;
-    color: var(--pw-muted);
-    font-size: 20px;
-  }
-
-  .pwchi-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 30px;
-  }
-
-  .pwchi-btn {
-    display: inline-flex;
-    min-height: 48px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-    border: 1px solid var(--pw-line-strong);
-    border-radius: 8px;
-    color: var(--pw-ink);
-    font-weight: 800;
-    text-decoration: none;
-  }
-
-  .pwchi-btn-primary {
-    color: #fff;
-    border-color: transparent;
-    background: linear-gradient(180deg, #8088ff 0%, #5158f4 100%);
-    box-shadow: 0 18px 36px rgba(81, 88, 244, 0.34), inset 0 -4px 0 rgba(20, 8, 41, 0.42);
-  }
-
-  .pwchi-btn-secondary {
-    background: rgba(255, 248, 255, 0.075);
-  }
-
-  .pwchi-hero-card {
-    position: relative;
-    min-height: 520px;
-    border: 1px solid var(--pw-line-strong);
-    border-radius: 8px;
-    overflow: hidden;
-    background: var(--pw-panel);
-    box-shadow: 0 26px 90px rgba(0, 0, 0, 0.5);
-  }
-
-  .pwchi-hero-card img {
-    width: 100%;
-    height: 100%;
-    min-height: 520px;
-    object-fit: cover;
-  }
-
-  .pwchi-float-note {
-    position: absolute;
-    left: 18px;
-    right: 18px;
-    bottom: 18px;
-    padding: 16px;
-    border: 1px solid rgba(255, 248, 255, 0.2);
-    border-radius: 8px;
-    background: rgba(8, 0, 24, 0.76);
-    backdrop-filter: blur(12px);
-  }
-
-  .pwchi-float-note strong {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .pwchi-float-note span,
-  .pwchi-card p,
-  .pwchi-step p,
-  .pwchi-media-card p,
-  .pwchi-faq p {
-    color: var(--pw-muted);
-  }
-
-  .pwchi-metrics {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
-    margin-top: 34px;
-  }
-
-  .pwchi-metric,
-  .pwchi-card,
-  .pwchi-step,
-  .pwchi-media-card,
-  .pwchi-faq {
-    border: 1px solid var(--pw-line);
-    border-radius: 8px;
-    background: rgba(255, 248, 255, 0.055);
-  }
-
-  .pwchi-metric {
-    min-height: 104px;
-    padding: 18px;
-  }
-
-  .pwchi-metric strong {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 24px;
-  }
-
-  .pwchi-metric span {
-    color: var(--pw-muted);
-    font-size: 14px;
-  }
-
-  .pwchi-head {
-    max-width: 780px;
-    margin-bottom: 34px;
-  }
-
-  .pwchi-head h2 {
-    margin-bottom: 14px;
-    font-size: clamp(34px, 5vw, 58px);
-    line-height: 1.02;
-  }
-
-  .pwchi-head p {
-    color: var(--pw-muted);
-    font-size: 18px;
-  }
-
-  .pwchi-two {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-  }
-
-  .pwchi-three {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-  }
-
-  .pwchi-four {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 14px;
-  }
-
-  .pwchi-card,
-  .pwchi-step,
-  .pwchi-faq {
-    padding: 24px;
-  }
-
-  .pwchi-card-featured {
-    border-color: rgba(255, 79, 216, 0.55);
-    background:
-      linear-gradient(180deg, rgba(255, 79, 216, 0.16), rgba(104, 114, 255, 0.08)),
-      var(--pw-panel);
-  }
-
-  .pwchi-tag {
-    display: inline-flex;
-    margin-bottom: 18px;
-    padding: 6px 10px;
-    border: 1px solid var(--pw-line-strong);
-    border-radius: 999px;
-    color: #f6f0ff;
-    font-size: 12px;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-
-  .pwchi-card h3,
-  .pwchi-step h3,
-  .pwchi-media-card h3,
-  .pwchi-faq h3 {
-    margin-bottom: 10px;
-    font-size: 23px;
-    line-height: 1.14;
-  }
-
-  .pwchi-list {
-    display: grid;
-    gap: 10px;
-    margin: 18px 0 0;
-    padding-left: 18px;
-    color: var(--pw-muted);
-  }
-
-  .pwchi-pipeline {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 12px;
-  }
-
-  .pwchi-step-number {
-    display: inline-grid;
-    width: 36px;
-    height: 36px;
-    place-items: center;
-    margin-bottom: 28px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, var(--pw-pink), var(--pw-violet));
-    font-weight: 900;
-  }
-
-  .pwchi-media-card {
-    overflow: hidden;
-  }
-
-  .pwchi-media-card img,
-  .pwchi-media-card video {
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
-    background: #120022;
-  }
-
-  .pwchi-media-body {
-    padding: 18px;
-  }
-
-  .pwchi-band {
-    background:
-      linear-gradient(90deg, rgba(104, 114, 255, 0.16), rgba(255, 79, 216, 0.14), rgba(183, 92, 255, 0.14)),
-      rgba(255, 248, 255, 0.045);
-  }
-
-  .pwchi-clan-card {
-    position: relative;
-    min-height: 210px;
-    border: 1px solid var(--pw-line);
-    border-radius: 8px;
-    overflow: hidden;
-    background: var(--pw-panel);
-  }
-
-  .pwchi-clan-card img {
-    width: 100%;
-    height: 100%;
-    min-height: 210px;
-    object-fit: cover;
-    opacity: 0.84;
-  }
-
-  .pwchi-clan-card span {
-    position: absolute;
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-    padding: 10px 12px;
-    border: 1px solid rgba(255, 248, 255, 0.18);
-    border-radius: 8px;
-    background: rgba(8, 0, 24, 0.72);
-    font-weight: 800;
-  }
-
-  .pwchi-cta {
-    padding: 34px;
-    border: 1px solid rgba(255, 79, 216, 0.46);
-    border-radius: 8px;
-    background:
-      radial-gradient(circle at 20% 10%, rgba(255, 79, 216, 0.22), transparent 18rem),
-      linear-gradient(135deg, rgba(255, 79, 216, 0.14), rgba(104, 114, 255, 0.1)),
-      var(--pw-panel);
-  }
-
-  .pwchi-cta h2 {
-    margin-bottom: 10px;
-    font-size: clamp(32px, 5vw, 58px);
-    line-height: 1.04;
-  }
-
-  .pwchi-cta p {
-    max-width: 760px;
-    color: var(--pw-muted);
-    font-size: 18px;
-  }
-
-  @media (max-width: 980px) {
-    .pwchi-grid,
-    .pwchi-two {
-      grid-template-columns: 1fr;
-    }
-
-    .pwchi-three,
-    .pwchi-four,
-    .pwchi-pipeline,
-    .pwchi-metrics {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media (max-width: 680px) {
-    .pwchi-section,
-    .pwchi-hero {
-      padding: 54px 0;
-    }
-
-    .pwchi-three,
-    .pwchi-four,
-    .pwchi-pipeline,
-    .pwchi-metrics {
-      grid-template-columns: 1fr;
-    }
-
-    .pwchi-actions .pwchi-btn,
-    .pwchi-btn {
-      width: 100%;
-    }
-
-    .pwchi-hero-card,
-    .pwchi-hero-card img {
-      min-height: 360px;
-    }
-  }
 </style>
 
 <div class="pwchi-demo-page">
@@ -403,21 +17,21 @@
       <div>
         <p class="pwchi-eyebrow">Free Demo Pack</p>
         <h1>Want your own Pwchi?</h1>
-        <p class="pwchi-lead">Start with one original PNG and discover how a Pwchi can become an avatar, sticker pack, game NPC, merch concept, AI companion, mascot and part of a living clan world.</p>
+        <p class="pwchi-lead">Start with one original PNG and discover how a Pwchi can become an avatar, sticker pack, game NPC, merch concept, AI companion, brand avatar and part of a living clan world.</p>
         <div class="pwchi-actions">
           <a class="pwchi-btn pwchi-btn-primary" href="#download-demo-pack">Download the Demo Pack</a>
           <a class="pwchi-btn pwchi-btn-secondary" href="https://pwchin.com/creator/">Create a Pwchi</a>
-          <a class="pwchi-btn pwchi-btn-secondary" href="https://pwchin.com/msg/">Request a Custom Pipeline</a>
+          <a class="pwchi-btn pwchi-btn-secondary" href="https://pwchin.com/msg/">Request a Guided Tour</a>
         </div>
         <div class="pwchi-metrics">
-          <div class="pwchi-metric"><strong>1 PNG</strong><span>the origin asset</span></div>
-          <div class="pwchi-metric"><strong>7 clans</strong><span>identity and worldbuilding</span></div>
-          <div class="pwchi-metric"><strong>5+ outputs</strong><span>avatar, sticker, NPC, merch</span></div>
+          <div class="pwchi-metric"><strong>1 PNG</strong><span>the origin asset, the building block, the source</span></div>
+          <div class="pwchi-metric"><strong>7 clans</strong><span>identity, pedigree OC, IP and worldbuilding</span></div>
+          <div class="pwchi-metric"><strong>5+ outputs</strong><span>avatar, sticker, NPC, merch, companion, OC</span></div>
           <div class="pwchi-metric"><strong>2 paths</strong><span>learn it or hire help</span></div>
         </div>
       </div>
       <div class="pwchi-hero-card">
-        <img src="https://pwchin.com/wp-content/uploads/dd39-16/mypwchin.png" alt="Pwchi World visual identity">
+        <img src="https://pwchin.com/wp-content/uploads/19e5-1/mira-scan.gif" alt="Pwchi World visual identity">
         <div class="pwchi-float-note">
           <strong>One PNG. Many creative outputs.</strong>
           <span>A Pwchi is not only an image. It is a source character for a wider creative pipeline.</span>
@@ -430,8 +44,8 @@
     <div class="pwchi-wrap">
       <div class="pwchi-head">
         <p class="pwchi-eyebrow">The idea</p>
-        <h2>PWCHIN is a character ecosystem, not just a generator.</h2>
-        <p>Pwchies can be created, submitted to clans, shown in galleries, used as profiles, transformed through AI tools and developed into personal avatars or brand mascots.</p>
+        <h2>PWCHI&#8482; is a character ecosystem, not just a generator.</h2>
+        <p>Pwchies can be created, submitted to clans, shown in galleries, used as profiles, transformed through AI tools and developed into personal avatars or brand avatars.</p>
       </div>
       <div class="pwchi-three">
         <article class="pwchi-card pwchi-card-featured">
@@ -458,14 +72,14 @@
       <div>
         <p class="pwchi-eyebrow">What you get</p>
         <h2>The Free Pwchi Demo Pack</h2>
-        <p class="pwchi-lead">A practical starter pack for understanding the PWCHIN workflow: source image, identity block, prompt notes, pipeline directions and service ideas.</p>
+        <p class="pwchi-lead">A practical starter pack for understanding the PWCHIN workflow: source image, identity block, prompt notes, pipeline directions and service ideas. A 20+ PDF with what we did, what we tested, what it worked and you see the results. No theory, no "you might"... this is it.</p>
         <div class="pwchi-actions">
-          <a class="pwchi-btn pwchi-btn-primary" href="https://pwchin.com/wp-content/uploads/19e5-1/2026_mediakit.zip">Download placeholder ZIP</a>
-          <a class="pwchi-btn pwchi-btn-secondary" href="https://github.com/PwchiWorld/pwchi-media">View GitHub Media Hub</a>
+          <a class="pwchi-btn pwchi-btn-primary" href="https://pwchin.com/wp-content/uploads/19e5-1/pwchi-demo-pipelines.zip">Download Demo Pack ZIP</a>
+          <a class="pwchi-btn pwchi-btn-secondary" href="https://github.com/PwchiWorld/pwchi-media" target="_blank">View GitHub Media Hub</a>
         </div>
       </div>
       <article class="pwchi-card">
-        <span class="pwchi-tag">Inside</span>
+        <span class="pwchi-tag">[PDF] Inside</span>
         <ul class="pwchi-list">
           <li>Sample Pwchi source image</li>
           <li>One PNG to many outputs guide</li>
@@ -482,7 +96,7 @@
       <div class="pwchi-head">
         <p class="pwchi-eyebrow">Workflow</p>
         <h2>From origin image to creative pipeline.</h2>
-        <p>The Demo Pack shows the thinking behind the existing PWCHIN pipeline posts and media experiments.</p>
+        <p>The Demo Pack shows the thinking behind the existing PWCHI pipeline posts and media experiments.</p>
       </div>
       <div class="pwchi-pipeline">
         <article class="pwchi-step"><span class="pwchi-step-number">1</span><h3>Create</h3><p>Start with an original Pwchi PNG as the character origin.</p></article>
@@ -498,7 +112,7 @@
     <div class="pwchi-wrap">
       <div class="pwchi-head">
         <p class="pwchi-eyebrow">Existing demos</p>
-        <h2>PWCHIN already has pipeline material to build from.</h2>
+        <h2>PWCHI already has pipeline material to build from.</h2>
         <p>These assets come from the current PWCHIN Media Library and can be used as reference points for social content, Demo Pack examples and creator education.</p>
       </div>
       <div class="pwchi-three">
@@ -507,11 +121,11 @@
           <div class="pwchi-media-body"><h3>PNG to Gemini</h3><p>A workflow for taking a Pwchi source image into higher-fidelity visual directions.</p></div>
         </article>
         <article class="pwchi-media-card">
-          <img src="https://pwchin.com/wp-content/uploads/19e5-1/gentube-pipeline.png" alt="Pwchi GenTube pipeline">
+          <img src="https://pwchin.com/wp-content/uploads/19e5-1/media-videos.png" alt="Pwchi GenTube pipeline">
           <div class="pwchi-media-body"><h3>PNG to video</h3><p>A pipeline reference for turning source images into animated or video-ready material.</p></div>
         </article>
         <article class="pwchi-media-card">
-          <img src="https://pwchin.com/wp-content/uploads/19e5-1/gemini-output.png" alt="Gemini output">
+          <img src="https://pwchin.com/wp-content/uploads/2026/02/pwchin-wall-3.jpg" alt="Gemini output">
           <div class="pwchi-media-body"><h3>Output comparison</h3><p>Use the source image as a consistency anchor while exploring new formats.</p></div>
         </article>
       </div>
@@ -533,7 +147,7 @@
         <a class="pwchi-clan-card" href="https://pwchin.com/pwchi-clan/moonaboveclouds-clan/"><img src="https://pwchin.com/wp-content/uploads/19e5-1/mac1-map.gif" alt="Moon Above Clouds clan"><span>Moon Above Clouds</span></a>
         <a class="pwchi-clan-card" href="https://pwchin.com/pwchi-clan/ignia-clan/"><img src="https://pwchin.com/wp-content/uploads/19e5-1/ignia-map.gif" alt="Ignia clan"><span>Ignia</span></a>
         <a class="pwchi-clan-card" href="https://pwchin.com/pwchi-clan/seamoon-clan/"><img src="https://pwchin.com/wp-content/uploads/19e5-1/sm-map.gif" alt="Sea Moon clan"><span>Sea Moon</span></a>
-        <a class="pwchi-clan-card" href="https://pwchin.com/pwchi-clan/"><img src="https://pwchin.com/wp-content/uploads/19e5-1/pwchi-language.png" alt="Choose your Pwchi clan"><span>Choose your clan</span></a>
+        <a class="pwchi-clan-card" href="https://pwchin.com/pwchi-clan/"><img src="https://pwchin.com/wp-content/uploads/19e5-1/2-1.png" alt="Choose your Pwchi clan"><span>Choose your clan</span></a>
       </div>
     </div>
   </section>
@@ -633,11 +247,23 @@
         <h2>See a Pwchi. Want one. Build your own or hire a creator.</h2>
         <p>Download the Demo Pack to learn the pipeline, create your own Pwchi with the existing creator tool, or request help turning one character into a full creative direction.</p>
         <div class="pwchi-actions">
-          <a class="pwchi-btn pwchi-btn-primary" href="https://pwchin.com/wp-content/uploads/19e5-1/2026_mediakit.zip">Download the Demo Pack</a>
+          <a class="pwchi-btn pwchi-btn-primary" href="https://pwchin.com/wp-content/uploads/19e5-1/pwchi-demo-pipelines.zip">Download the Demo Pack</a>
           <a class="pwchi-btn pwchi-btn-secondary" href="https://pwchin.com/creator/">Create a Pwchi</a>
           <a class="pwchi-btn pwchi-btn-secondary" href="https://pwchin.com/msg/">Request Help</a>
         </div>
       </div>
     </div>
   </section>
+  
+  
+  <section class="pwchi-section">
+      <div class="pwchi-wrap">
+           <div class="pwchi-actions" style="justify-content:center;">
+             <a class="pwchi-btn pwchi-btn-secondary" href="https://pwchin.info/" target="_blank">Pwchin Info - 4 Ai</a>
+             <a class="pwchi-btn pwchi-btn-primary" href="https://mediakit.pwchin.com/" target="_blank">Download Media Kit</a>
+             <a class="pwchi-btn pwchi-btn-secondary" href="https://pwchin.substack.com/subscribe" target="_blank">Subscribe to Substack</a>
+           </div>
+      </div>
+  </section>
+  
 </div>
